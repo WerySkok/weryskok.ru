@@ -57,6 +57,10 @@
             margin-right: auto;
             margin-left: auto;
         }
+
+        .darkmode--activated .center {
+            color: #fff;
+        }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -75,6 +79,30 @@
         <h1>Ошибка 404</h1>
         <p>Здесь ничего нет, зря ищешь. Приходи, когда сайт будет готов.</p>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </body>
 
 </html>
