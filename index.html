@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт готовится</title>
+    <title>Главная — WerySkok.ru</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -40,7 +40,6 @@
         }
 
         a {
-            text-decoration: dotted;
             text-decoration-line: underline;
             text-decoration-thickness: .05vmin;
         }
@@ -52,28 +51,27 @@
             align-items: center;
             flex-flow: row nowrap;
             padding: .5em;
+            justify-content: center;
         }
-
+        
         a.sitelogo {
             font-weight: 600;
             font-size: 2.5em;
             text-decoration: none;
             color: black;
             width: max-content;
-            margin-right: auto;
-            margin-left: auto;
         }
 
-        .darkmode--activated .center {
-            color: #fff;
+        .navigation {
+            list-style: none;
         }
-
-        .darkmode--activated .center a {
-            color: #5e5eff;
+        .navigation a {
+            text-decoration: none;
+            color: rgba(0,0,0,.8)
         }
-
-        .darkmode--activated .center a:visited {
-            color: #895eff;
+        .navigation a:hover {
+            text-decoration: none;
+            background-color: rgba(0,0,0,.1);
         }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -88,10 +86,18 @@
 <body>
     <nav>
         <a class="sitelogo" href="https://weryskok.ru">WerySkok.ru</a>
+        <ul class="navigation">
+            <li>
+                <a href="https://weryskok.space">Блог</a>
+            </li>
+            <li>
+                <a href="https://t.me/WerySkok">Telegram</a>
+            </li>
+        </ul>
     </nav>
     <div class="center">
-        <h1>Сайт готовится</h1>
-        <p>Сайт только готовится к открытию, но если я вам срочно нужен, то вот вам мои контакты:</p>
+        <h1>Привет!</h1>
+        <p>Я Александр, и это мой сайт.</p>
         <ul>
             <li><a href="https://t.me/WerySkok">Telegram</a></li>
             <li><a href="https://vk.com/weryskok">ВКонтакте</a></li>
@@ -99,30 +105,6 @@
             <li><a href="mailto:weryskok@gmail.com">weryskok@gmail.com</a></li>
         </ul>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        const options = {
-            bottom: '64px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: true, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
-
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
-    </script>
 
 </body>
 
