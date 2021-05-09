@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="https://weryskok.ru">WerySkok.ru</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,17 +47,27 @@
     </nav>
     <main>
         <section class="d-flex align-items-center justify-content-center vh-100">
-            <div>
-                <h1 class="display-3">Привет!</h1>
-                <p>Я Александр, и это мой сайт.</p>
-                <div class="btn-group">
-                    <a class="btn btn-primary" href="https://t.me/WerySkok"><i class="fab fa-telegram-plane"></i></a>
-                    <a class="btn btn-primary" href="https://vk.com/weryskok"><i class="fab fa-vk"></i></a>
+            <!-- на этот блок ушло много слёз, помогите -->
+            <div class="row justify-content-center me-0">
+                <div class="col-8 col-md-6">
+                    <img src="imgs/avatar.jpg" alt="Фотография Александра Минкина" class="rounded float-md-end"
+                        height="300px">
+                </div>
+                <div class="col-8 col-md-6">
+                    <h1 class="display-3">Привет!</h1>
+                    <p>Я Александр, и это мой сайт.</p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="https://t.me/WerySkok"><i
+                                class="fab fa-telegram-plane"></i></a>
+                        <a class="btn btn-primary" href="https://vk.com/weryskok"><i class="fab fa-vk"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
 
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
