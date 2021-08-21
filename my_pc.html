@@ -14,6 +14,9 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        main > .container {
+            padding-top: 60px;
+        }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="https://weryskok.ru">WerySkok.ru</a>
@@ -48,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <main>
+    <main class="flex-shrink-0">
         <section class="container mb-5">
             <h1 class="display-5 mb-4">Мой компьютер</h1>
             <p>Так сложилось, что мой компьютер — покупной блок аж из 2013 года. Он собран компанией USN в линейке
