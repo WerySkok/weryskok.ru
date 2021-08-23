@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="https://weryskok.ru">WerySkok.ru</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% for item in site.data.navigation %}
+                <li class="nav-item">
+                    <a href="{{ item.link }}" class="nav-link{% if page.url==item.link %} active{% endif %}" {% if
+                        page.url==item.link %}aria-current="page" {% endif %}>{{ item.name }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item">
+                    <a class="nav-link" href="https://t.me/WerySkok"><i class="fab fa-telegram-plane"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
