@@ -1,13 +1,13 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="https://weryskok.ru">WerySkok.ru</a>
+        <a class="navbar-brand" href="https://weryskok.ru/en/">WerySkok.ru</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Open menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% for item in site.data.navigation %}
+                {% for item in site.data.navigation-en %}
                 <li class="nav-item">
                     <a href="{{ item.link }}" class="nav-link{% if page.url==item.link %} active{% endif %}" {% if
                         page.url==item.link %}aria-current="page" {% endif %}>{{ item.name }}</a>
@@ -19,11 +19,11 @@
             </ul>
             <span class="navbar-nav dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-globe"></i>&nbsp;Русский
+                    <i class="fas fa-globe"></i>&nbsp;English
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item active" href="https://weryskok.ru/">Русский</a></li>
-                  <li><a class="dropdown-item" href="https://weryskok.ru/en/">English</a></li>
+                  <li><a class="dropdown-item" href="https://weryskok.ru/">Русский</a></li>
+                  <li><a class="dropdown-item active" href="https://weryskok.ru/en/">English</a></li>
                 </ul>
               </li>
             </span>
