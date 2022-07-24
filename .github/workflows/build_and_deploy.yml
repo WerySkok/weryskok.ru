@@ -35,10 +35,9 @@ jobs:
           username: ${{ secrets.FTP_USER_NAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/
-          server-dir: www/weryskok.ru/
+          server-dir: /www/weryskok.ru/
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
             **/files/**
-          dry-run: true
