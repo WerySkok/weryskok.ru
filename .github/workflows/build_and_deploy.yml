@@ -1,0 +1,38 @@
+name: 🚀 Build and deploy website on push
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    - name: 📦 Use cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: 🏗️ Build website
+      uses: helaili/jekyll-action@v2
+      with:
+        build_only: true
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_WEB_SERVER }}
+        username: ${{ secrets.USER_NAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./_site/
+        server-dir: www/weryskok.ru/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/files/**
+        dry-run: true
+   
