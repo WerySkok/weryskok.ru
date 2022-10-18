@@ -6,3 +6,7 @@ plugins:
 exclude:
   - README.MD
   - LICENSE
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
