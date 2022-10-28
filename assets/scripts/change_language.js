@@ -17,7 +17,10 @@ function usePrefferedLanguage(newLang) {
     }
 
     function browserPrefferedLanguage() {
-        if (navigator.languages.includes('ru')) {
+        if (
+            navigator.languages.includes('ru') ||
+            navigator.languages.includes('ru-RU')
+        ) {
             return 'ru';
         }
         return 'en';
