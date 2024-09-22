@@ -60,21 +60,17 @@ title = "Главная"
                 </div>
                 <div class="card-body text-center">
                     <div class="btn-group-vertical">
-                        <a href="https://multimc.org/" class="btn btn-primary"
-                            ><i class="fas fa-dot-circle"></i>&nbsp;Лаунчер
-                            MultiMC</a
-                        >
-                        <a
-                            href="https://nightly.link/UltimMC/Launcher/workflows/main/develop"
-                            class="btn btn-primary"
-                            ><i class="fas fa-dot-circle"></i>&nbsp;Версия
-                            MultiMC для пиратов</a
-                        >
                         <a
                             href="https://prismlauncher.org/"
                             class="btn btn-primary"
                             ><i class="fas fa-dot-circle"></i>&nbsp;Prism
-                            Launcher (MultiMC с плюшками)</a
+                            Launcher</a
+                        >
+                        <a
+                            href="https://github.com/Diegiwg/PrismLauncher-Cracked/releases"
+                            class="btn btn-primary"
+                            ><i class="fas fa-dot-circle"></i>&nbsp;Prism
+                            Launcher для пиратов</a
                         >
                         <a href="https://adoptium.net/" class="btn btn-primary"
                             ><i class="fas fa-dot-circle"></i>&nbsp;Adoptium
