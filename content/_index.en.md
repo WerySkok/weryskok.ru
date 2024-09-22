@@ -402,10 +402,10 @@ title = "Main"
                 <div class="card-body text-center">
                     <div class="btn-group-vertical">
                         <a
-                            href="https://matrix.to/#/@weryskok:sibnsk.net"
+                            href="https://matrix.to/#/@weryskok:matrix.org"
                             class="btn btn-primary"
                             ><i class="far fa-comment"></i
-                            >&nbsp;@weryskok:sibnsk.net</a
+                            >&nbsp;@weryskok:matrix.org</a
                         >
                     </div>
                 </div>
