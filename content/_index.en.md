@@ -98,21 +98,34 @@ title = "Main"
         <div class="col-md-4 mb-4 mb-md-0">
             <div class="card">
                 <div class="card-header">
-                    <i class="fa-solid fa-gamepad"></i>&nbsp;My server
+                    <i class="fa-solid fa-gamepad"></i>&nbsp;MURS
                 </div>
                 <div class="card-body text-center">
-                    <p>IP: <mark class="text-black">weryskok.ru</mark>.<br /></p>
+                    <a href="https://murs-mc.ru/">
+                        <img src="/assets/images/murs_banner.jpg" class="rounded mb-2" style="max-width: 100%" />
+                    </a>
                     <div class="btn-group-vertical mb-2">
+                        <a href="https://murs-mc.ru/" class="btn btn-primary">
+                        <i class="fa-solid fa-globe"></i>&nbsp;Site</a>
+                        <a href="https://wiki.murs-mc.ru/" class=
+                        "btn btn-primary">
+                            <i class="fa-solid fa-book-atlas"></i>&nbsp;Server 
+                            wiki
+                        </a>
                         <a
-                            href="https://discord.com/invite/KCuJ687jqA"
+                            href="https://murs-mc.ru/discord"
                             class="btn btn-primary"
-                            ><i class="fab fa-discord"></i>&nbsp;Discord
-                            server</a
+                            ><i class="fab fa-discord"></i
+                            >&nbsp;Discord server</a
                         >
                     </div>
                     <p class="mb-0">
-                        My (primarily Russian) «WerySkok's Friends SMP»
-                        on&nbsp;1.18.2. Entry through Discord server.
+                        Minecraft Urban Railway Server — my server with
+                        <a href="https://minecrafttransitrailway.com" target=
+                        "_blank">MTR</a> mod, aimed at the post-Soviet
+                        construction and European architecture. The server has a
+                        large number of decorative mods installed, and runs on 
+                        version 1.19.4 Fabric.
                     </p>
                 </div>
             </div>
