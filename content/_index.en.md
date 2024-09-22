@@ -1,7 +1,6 @@
----
-layout: default-en
-title: Main
----
++++
+title = "Main"
++++
 
 <section class="d-flex align-items-center justify-content-center vh-100">
     <!-- it took a lot of tears on this part, pls help -->
