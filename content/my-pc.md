@@ -5,8 +5,10 @@ title = "Мои ПК"
 ### Ноутбук
 В настоящее время я пользуюсь ноутбуком <a 
 href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
-16-c0001ur</a>, купленным за 140 тысяч рублей. Пока я внутрь него не залезал,
-но планирую увеличить объём ОЗУ в будущем.
+16-c0001ur</a>, купленным за 140 тысяч рублей. 
+
+Спустя год после покупки я заменил 2 комплектные плашки Samsung M471A1K43EB1-CWE
+по 8 ГБ с частотой 3200 МГц на 2 плашки Apacer по 16 ГБ. 
 
 Конфигурация ноутбука следующая:
 
@@ -22,8 +24,10 @@ href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
         <tr>
             <th scope="row">Оперативная память</th>
             <td>
-                2 плашки памяти DDR4-3200 по <strong>8 ГБ</strong> (всего
-                <strong>16 ГБ</strong>)
+                2 плашки памяти DDR4-3200 <a href=
+                "https://www.dns-shop.ru/product/73aec6697cd0ed20/operativnaa-pamat-sodimm-apacer-es16g21gsh-16-gb/"
+                target="_blank">Apacer ES.16G21.GSH</a> по <strong>16 ГБ
+                </strong> (всего <strong>32 ГБ</strong>)
             </td>
         </tr>
         <tr>
@@ -45,8 +49,7 @@ href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
         <tr>
             <th scope="row">ОС</th>
             <td>
-                Windows 11 и Arch Linux
-                <small>(увы, есть проблемы с дискретной видеокартой)</small>
+                Fedora KDE <small>(всем советую)</small> и Windows 11
             </td>
         </tr>
         <tr>
@@ -60,6 +63,9 @@ href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
                     <li>
                         Внешний монитор ViewSonic VX2452MH c разрешением
                         <strong>1920x1080</strong> (16:9)
+                    </li>
+                    <li>
+                        BenQ E910 c разрешением <strong>1280x1024</strong> (5:4)
                     </li>
                 </ul>
             </td>
@@ -80,8 +86,7 @@ href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
 добавил терабайтник от старого компа, потом заказал SSD с алика, а в
 2020-м я решился на замену ОЗУ и видеокарты. В 2022 я заменил два диска
 по 1 ТБ на один диск на 2 ТБ, так как у первых двух срок службы подходил
-к концу. (только новый почему-то постоянно останавлиется и заново
-раскручивается...)
+к концу. В конце 2023 были заменены блок питания и кулер.
 
 В настоящее время компьютер мало используется в связи с появлением
 ноутбука.

@@ -5,10 +5,12 @@ title = "My PCs"
 ### Laptop
 Right now I am using <a 
 href="https://support.hp.com/us-en/document/c08081496" target="_blank">HP OMEN
-16-c0001ur</a>laptop. I didn't try to replace any parts yet but I am planning to
-increase RAM capacity in the future.
+16-c0001ur</a>laptop. 
 
-Laptop configuration is:
+A year after I bought it, I replaced the 2 bundled Samsung M471A1K43EB1-CWE 8GB 
+3200 MHz RAM sticks with 2 Apacer 16GB sticks. 
+
+Current laptop configuration is:
 
 <table class="table table-hover">
     <tbody>
@@ -22,8 +24,8 @@ Laptop configuration is:
         <tr>
             <th scope="row">RAM</th>
             <td>
-                Two DDR4-3200 <strong>8 GB</strong> sticks (<strong>16 GB
-                </strong> in total)
+                Two DDR4-3200 <strong>16 GB</strong> Apacer ES.16G21.GSH sticks 
+                (<strong>32 GB</strong> in total)
             </td>
         </tr>
         <tr>
@@ -80,7 +82,7 @@ Of course, the computer in such a long time was updated, first I added a
 terabyte HDD from the old computer, Then I ordered an SSD from AliExpress, and
 in 2020 I decided to replace the RAM and video card. In 2022, I replaced two 1TB
 drives with one 2TB drive because the first two were nearing the end of their
-life. (yet the new one oftenly restarts itself for some reason)
+life. The power supply and cooler were replaced at the end of 2023.
 
 Now it is rarely used since laptop's appearance.
 
