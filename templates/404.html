@@ -1,12 +1,11 @@
----
-layout: default
-permalink: /404.html
-title: Ошибка 404
----
-
+{% extends "base.html" %}
+{% block title %}Ошибка 404{% endblock title %}
+{% block content -%}
 <section class="d-flex align-items-center justify-content-center vh-100">
     <div>
         <h1 class="display-3">Ошибка 404</h1>
         <p>Здесь ничего нет, зря ищешь.</p>
     </div>
 </section>
+{%- endblock content %}
+

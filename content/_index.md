@@ -1,8 +1,6 @@
----
-layout: default
-title: Главная
----
-
++++
+title = "Главная"
++++
 <section class="d-flex align-items-center justify-content-center vh-100">
     <!-- на этот блок ушло много слёз, помогите -->
     <div class="row justify-content-center me-0">

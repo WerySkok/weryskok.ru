@@ -1,0 +1,38 @@
+{% if lang == "en" %}
+    {% set data = load_data(path="data/navigation-en.yml") %}
+{% else %}
+    {% set data = load_data(path="data/navigation.yml") %}
+{% endif %}
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href={% if lang == "en" %}"/en/"{% else %}"/"{% endif %}>WerySkok.ru</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label={% if lang == "en" %}"Open menu"{% else %}"Открыть меню"{% endif %}>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% for item in data %}
+                <li class="nav-item">
+                    <a href="{{ item.link }}" class="nav-link{% if current_url and current_url == item.link %} active{% endif %}" {% if
+                        current_url and current_url == item.link %}aria-current="page" {% endif %}>{{ item.name | safe }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item">
+                    <a class="nav-link" href="https://t.me/WerySkok"><i class="fab fa-telegram-plane"></i></a>
+                </li>
+            </ul>
+            <span class="navbar-nav dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe"></i>&nbsp;{% if lang == "en" %}English{% else %}Русский{% endif %}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item {% if lang == "ru" %}active{% endif %}" onclick="usePrefferedLanguage('ru'); return false;" href="/">Русский</a></li>
+                  <li><a class="dropdown-item {% if lang == "en" %}active{% endif %}" onclick="usePrefferedLanguage('en'); return false;" href="/en/">English</a></li>
+                </ul>
+              </li>
+            </span>
+        </div>
+    </div>
+</nav>
