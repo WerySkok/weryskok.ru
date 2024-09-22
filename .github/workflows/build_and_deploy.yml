@@ -1,43 +1,31 @@
 # name: 🚀 Build and deploy website on push
-# on:
-#   push:
-#     branches:
-#       - main
-# jobs:
-#   web-deploy:
-#     name: 🎉 Deploy
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: 🚚 Get latest code
-#         uses: actions/checkout@v2
-#       - name: 📦 Use cache
-#         uses: actions/cache@v2
-#         with:
-#           path: vendor/bundle
-#           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-#           restore-keys: |
-#             ${{ runner.os }}-gems-
-#       - name: 🔧 Setup Node.js
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 16
-#       - name: 🛠️ Setup Ruby
-#         uses: ruby/setup-ruby@v1
-#         with: 
-#           ruby-version: '3.0'
-#           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-#       - name: 🏗️ Build website with Jekyll
-#         run: JEKYLL_ENV=production bundle exec jekyll build
-#       - name: 📂 Sync files
-#         uses: SamKirkland/FTP-Deploy-Action@4.3.0
-#         with:
-#           server: ${{ secrets.FTP_WEB_SERVER }}
-#           username: ${{ secrets.FTP_USER_NAME }}
-#           password: ${{ secrets.FTP_PASSWORD }}
-#           local-dir: ./_site/
-#           server-dir: /www/weryskok.ru/
-#           exclude: |
-#             **/.git*
-#             **/.git*/**
-#             **/node_modules/**
-#             **/files/**
+on:
+  push:
+    branches:
+      - main
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+      - name: 🛠️ Setup Zola
+        uses: taiki-e/install-action@v2
+        with: 
+          tool: zola@0.19.1
+      - name: 🏗️ Build website with Jekyll
+        run: zola build
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_WEB_SERVER }}
+          username: ${{ secrets.FTP_USER_NAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: /www/weryskok.ru/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/files/**
