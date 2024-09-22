@@ -41,7 +41,7 @@ title = "Главная"
                     <i class="fas fa-dot-circle"></i>&nbsp;Я
                 </div>
                 <div class="card-body text-center">
-                    <p>Мой ник — <mark>WerySkok</mark>.<br /></p>
+                    <p>Мой ник — <mark class="text-black">WerySkok</mark>.<br /></p>
                     <div class="btn-group-vertical">
                         <a
                             href="https://ru.namemc.com/profile/WerySkok.1"
@@ -102,7 +102,7 @@ title = "Главная"
                     <i class="fa-solid fa-gamepad"></i>&nbsp;Мой сервер
                 </div>
                 <div class="card-body text-center">
-                    <p>IP — <mark>weryskok.ru</mark>.<br /></p>
+                    <p>IP — <mark class="text-black">weryskok.ru</mark>.<br /></p>
                     <div class="btn-group-vertical mb-2">
                         <a
                             href="https://discord.com/invite/KCuJ687jqA"
@@ -216,7 +216,7 @@ title = "Главная"
                         >
                     </div>
                     <p class="mb-0">
-                        Мой ник — <mark>WerySkok#9962</mark><br /><small
+                        Мой ник — <mark class="text-black">weryskok</mark><br /><small
                             >Добавляю в друзья, если есть повод.</small
                         >
                     </p>
@@ -407,7 +407,7 @@ title = "Главная"
                 </div>
                 <div class="card-body text-center">
                     <p class="mb-0">
-                        Мой ник — <mark>weryskok@xmpp.jp</mark><br /><small
+                        Мой ник — <mark class="text-black">weryskok@xmpp.jp</mark><br /><small
                             >Пользуюсь нечасто, ибо единственный нормальный
                             клиент — <a href="https://dino.im">Dino</a> под
                             Gnome.</small

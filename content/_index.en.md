@@ -40,7 +40,7 @@ title = "Main"
                     <i class="fas fa-dot-circle"></i>&nbsp;Me
                 </div>
                 <div class="card-body text-center">
-                    <p>My nickname is <mark>WerySkok</mark>.<br /></p>
+                    <p>My nickname is <mark class="text-black">WerySkok</mark>.<br /></p>
                     <div class="btn-group-vertical">
                         <a
                             href="https://namemc.com/profile/WerySkok.1"
@@ -101,7 +101,7 @@ title = "Main"
                     <i class="fa-solid fa-gamepad"></i>&nbsp;My server
                 </div>
                 <div class="card-body text-center">
-                    <p>IP: <mark>weryskok.ru</mark>.<br /></p>
+                    <p>IP: <mark class="text-black">weryskok.ru</mark>.<br /></p>
                     <div class="btn-group-vertical mb-2">
                         <a
                             href="https://discord.com/invite/KCuJ687jqA"
@@ -212,7 +212,7 @@ title = "Main"
                         >
                     </div>
                     <p class="mb-0">
-                        My Discord Tag is <mark>WerySkok#9962</mark><br /><small
+                        My Discord Tag is <mark class="text-black">weryskok</mark><br /><small
                             >I only add people to my friends if there are a
                             reason to do so.</small
                         >
@@ -405,7 +405,7 @@ title = "Main"
                 </div>
                 <div class="card-body text-center">
                     <p class="mb-0">
-                        My adress is <mark>weryskok@xmpp.jp</mark><br /><small
+                        My adress is <mark class="text-black">weryskok@xmpp.jp</mark><br /><small
                             >I don't use it often because
                             <a href="https://dino.im">Dino</a> for Gnome is the
                             only usable client.</small
