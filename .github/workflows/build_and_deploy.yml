@@ -14,9 +14,9 @@ jobs:
         uses: taiki-e/install-action@v2
         with: 
           tool: zola@0.19.1
-      - name: 🏗️ Build website with Jekyll
+      - name: 🏗️ Build website with Zola
         run: zola build
-      - name: 📂 Sync files
+      - name: 📂 Deploy files via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_WEB_SERVER }}
